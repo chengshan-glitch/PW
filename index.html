@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to GitHub</title>
+    <link rel="icon" type="image/png" href="github-3382.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <div class="logo-section">
+                <img src="github-3382.png" alt="GitHub Logo" class="logo">
+            </div>
+            
+            <h1>Sign in to GitHub</h1>
+            
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username">Username or email address</label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        placeholder="Username or email address"
+                        required
+                    >
+                    <span class="error-message" id="usernameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        placeholder="Password"
+                        required
+                    >
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+                
+                <button type="submit" class="signin-btn">Sign in</button>
+            </form>
+            
+            <div class="links-section">
+                <a href="#" class="link">Forgot password?</a>
+            </div>
+            
+            <div class="signup-section">
+                <p>New to GitHub? <a href="#" class="link signup-link">Create an account</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

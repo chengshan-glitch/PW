@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #24292e;
+    line-height: 1.5;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 16px;
+    background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: white;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 44px;
+    height: 44px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #24292e;
+}
+
+.form-group {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    background-color: #fafbfc;
+    color: #24292e;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #0366d6;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+}
+
+input::placeholder {
+    color: #6a737d;
+}
+
+.error-message {
+    color: #cb2431;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+input.error {
+    border-color: #cb2431;
+}
+
+.signin-btn {
+    width: 100%;
+    padding: 10px 16px;
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    background-color: #28a745;
+    border: 1px solid rgba(27, 31, 35, 0.15);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, border-color 0.2s;
+}
+
+.signin-btn:hover {
+    background-color: #218838;
+}
+
+.signin-btn:active {
+    background-color: #1e7e34;
+}
+
+.signin-btn:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+.links-section {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.link {
+    color: #0366d6;
+    text-decoration: none;
+    font-size: 13px;
+    transition: color 0.2s;
+}
+
+.link:hover {
+    color: #0256c7;
+    text-decoration: underline;
+}
+
+.signup-section {
+    border-top: 1px solid #e1e4e8;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.signup-section p {
+    color: #586069;
+}
+
+.signup-link {
+    color: #0366d6;
+}
+
+@media (max-width: 576px) {
+    .login-box {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 24px;
+    }
+
+    .logo {
+        width: 36px;
+        height: 36px;
+    }
+}
