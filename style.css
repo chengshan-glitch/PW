@@ -6,7 +6,7 @@
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f6f8fa;
     color: #24292e;
     line-height: 1.5;
 }
@@ -17,17 +17,16 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 16px;
-    background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
 }
 
 .login-box {
     width: 100%;
-    max-width: 400px;
+    max-width: 340px;
     padding: 40px;
     background-color: white;
-    border: 1px solid #e1e4e8;
+    border: 1px solid #d0d7de;
     border-radius: 6px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(27, 31, 35, 0.08);
 }
 
 .logo-section {
@@ -76,9 +75,9 @@ input[type="password"] {
 input[type="text"]:focus,
 input[type="password"]:focus {
     outline: none;
-    border-color: #0366d6;
+    border-color: #0969da;
     background-color: #ffffff;
-    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.1);
+    box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.14);
 }
 
 input::placeholder {
@@ -107,7 +106,7 @@ input.error {
     font-size: 14px;
     font-weight: 600;
     color: white;
-    background-color: #28a745;
+    background-color: #1f883d;
     border: 1px solid rgba(27, 31, 35, 0.15);
     border-radius: 6px;
     cursor: pointer;
@@ -115,11 +114,11 @@ input.error {
 }
 
 .signin-btn:hover {
-    background-color: #218838;
+    background-color: #19682d;
 }
 
 .signin-btn:active {
-    background-color: #1e7e34;
+    background-color: #165d2a;
 }
 
 .signin-btn:disabled {
@@ -127,13 +126,8 @@ input.error {
     cursor: not-allowed;
 }
 
-.links-section {
-    text-align: center;
-    margin-top: 16px;
-}
-
 .link {
-    color: #0366d6;
+    color: #0969da;
     text-decoration: none;
     font-size: 13px;
     transition: color 0.2s;
@@ -150,6 +144,18 @@ input.error {
     padding-top: 20px;
     text-align: center;
     font-size: 13px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+
+.form-row label {
+    margin-bottom: 0;
 }
 
 .signup-section p {
